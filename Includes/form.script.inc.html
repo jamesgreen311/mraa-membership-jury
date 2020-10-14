@@ -52,8 +52,8 @@
 
   function saveFormSuccess(e) {
     let title = document.getElementById('titleOfWork').value;
-    let footerMessage = `You can submit ${--uploadsLeft} more works for this exhibition.`;
-    let messageContent = `Your submission: [${title}] has been saved. Would you like to submit another work?`;
+    let footerMessage = `You can submit ${--uploadsLeft} more works.`;
+    let messageContent = `Your submission: [${title}] has been saved. If you have another work to submit, please Choose another file and upload.`;
     let container = document.getElementById("thumbnail-container");
 
     document.getElementById('loading').style.display = "none";

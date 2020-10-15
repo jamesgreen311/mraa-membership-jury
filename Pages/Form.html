@@ -51,7 +51,7 @@
           placeholder="Requested format 999 999-9999" required />
       </div>
 
-<!--       <div id="messageAlert" class="alert alert-success mt-4" role="alert" style="display: none;">
+      <!--       <div id="messageAlert" class="alert alert-success mt-4" role="alert" style="display: none;">
         <h4 class="alert-heading">Save Successful</h4>
         <p id="messageContent"></p>
         <hr>
@@ -61,11 +61,29 @@
       <div class="row">
         <div class="col-6">
           <div class="mraa-callout mraa-callout-info">
-            <label for="imageFile">Upload Your Art - (Limit of <span id="limit"><?= imageUploadLimit ?></span> Total)
-              All fields required *</label>
-            <p>Include 5 artworks with presentation (framing) displayed, 2 showing either the back of the 2D
-              work, or in the case of 3D the pedestal and mounting.</p>
-            <p>Limit JPG file size to under 3MB each, 72dpi. Keep quality as high as possible to stay under the file size limit. The larger the file size the longer it may take to upload. Please be patient.</p>
+            <h4><strong>Select Your Images to Upload</strong></h4>
+
+            <div class="row mb-2">
+              <div class="col-6"><strong>(Limit of <span id="limit"><?= imageUploadLimit ?></span> Total)</strong></div>
+              <div class="col-6 text-right">
+                <small>All fields required *</small>
+              </div>
+            </div>
+            <h5>Art Work Requirements</h5>
+            <ul>
+              <li>Include 5 artworks with presentation (framing) displayed</li>
+              <li>Two showing either the back of the 2D work</li>
+              <li>In the case of 3D work show the pedestal and mounting</li>
+            </ul>
+<!--             <p>Include 5 artworks with presentation (framing) displayed, <br>2 showing either the back of the 2D
+              work, <br>or in the case of 3D the pedestal and mounting.</p> -->
+            <h5>Image File Requirements</h5>
+            <ul>
+              <li>Limit JPG file size to under 3MB each, 72dpi</li>
+              <li>Keep quality as high as possible to stay under the file
+              size limit</li>
+              <li>Please be patient while image uploads. <mark>The larger the file size the longer it may take to upload.</mark> It may take several seconds.</li>
+            </ul>
             <div class="form-group mb-3">
               <input accept="image/jpeg, image/png" type="file" id="imageFile" class="form-control-file" required
                 onchange="showThumbnail(event)">

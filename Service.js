@@ -13,3 +13,8 @@ function render(f, opt) {
   }
   return templ.evaluate().setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }
+
+function getCurrentYear() {
+  y = new Date().getFullYear();
+  return y;
+}

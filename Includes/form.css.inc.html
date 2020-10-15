@@ -1,4 +1,41 @@
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Raleway:wght@900&display=swap');
+
+    :root {
+        --mraa-letter-m: hsl(170, 100%, 33%);
+        --mraa-letter-r: #792592;
+        --mraa-letter-a1: #0387ad;
+        --mraa-letter-a2: #c68614;
+        --mraa-button-primary: var(--mraa-letter-m);
+        --mraa-button-primary-border: hsl(170, 100%, 16.5%);
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        /* override bootstrap */
+        /* Font from main website */
+        font-family: Roboto, sans-serif;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        background: url(https://metrorichmondart.org/wp-content/themes/ares/inc/images/crossword.png);
+    }
+
+    h2.mraa-sub-header {
+        background-color: #c68614;
+        color: antiquewhite;
+        padding: 8px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+
+        /* override bootstrap */
+        font-size: 90%;
+    }
+
     .footer {
         flex-shrink: 0;
         margin-top: 25px;
@@ -16,7 +53,43 @@
     .content {
         flex: 1 0 auto;
     }
+
+    .mraa-alert {
+        /* override bootstrap */
+        font-size: 1rem;
+    }
     
+    .badge-success {
+        /* override bootstrap */
+        background-color: var(--mraa-letter-m);
+        color: #fafafa;
+        font-weight: 400;
+    }
+
+    .badge-danger {
+        /* override bootstrap */
+        background-color: #b51f1f;
+        color: #fafafa;
+        font-weight: 400;
+    }
+
+    .loading {
+        background-color: lightsteelblue;
+        width: 100vw;
+        height: 100vw;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: .95;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .smaller {
+        font-size: 60%;
+    }
+
     .mraa-button-primary {
         background-color: #32CD32;
         border-color: #28a745;
@@ -31,15 +104,8 @@
         color: #343a40;
     }
 
-    .loading {
-        background-color: lightsteelblue;
-        width: 100vw;
-        height: 100vw;
-        z-index: 1000;
-        position: fixed;
-        top: 0;
-        left: 0;
-        opacity: .9;
+    .mraa-container {
+        background-color: white;
     }
 
     .mraa-callout {
@@ -49,6 +115,7 @@
         border: 1px solid #eee;
         border-left-width: .25rem;
         border-radius: .25rem;
+        font-size: 1rem;
     }
 
     .mraa-callout-info {

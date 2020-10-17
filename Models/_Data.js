@@ -21,21 +21,8 @@ const sheetHeaders = [
     "WIDTH",
     "HEIGHT",
     "MEDIUM",
-    "PRICE",
     "FILENAME",
     "FILEID",
-    "TIMESTAMP"
+    "TIMESTAMP" 
 ]
-
-let testData = {
-    firstName: "Susan",
-    lastName: "Fisher",
-    email: "susan.fisher@me.com",
-    phone: "(999) 999-9999",
-    workTitle: "Morning glory",
-    width: 40,
-    height: 60,
-    medium: "Oil",
-    price: 1200
-}
 

@@ -72,11 +72,9 @@
             <h5>Art Work Requirements</h5>
             <ul>
               <li>Include 5 artworks with presentation (framing) displayed</li>
-              <li>Two showing either the back of the 2D work</li>
+              <li>Two showing the back of the 2D work</li>
               <li>In the case of 3D work show the pedestal and mounting</li>
             </ul>
-<!--             <p>Include 5 artworks with presentation (framing) displayed, <br>2 showing either the back of the 2D
-              work, <br>or in the case of 3D the pedestal and mounting.</p> -->
             <h5>Image File Requirements</h5>
             <ul>
               <li>Limit JPG file size to under 3MB each, 72dpi</li>
@@ -128,10 +126,15 @@
         <div class="col-12">
           <!-- Buttons -->
           <hr>
-          <div>
-            <button class="btn btn-primary mraa-button-primary mr-3" id="btnSave">Send to MRAA</button>
-            <a href="<?= ScriptApp.getService().getUrl(); ?>?v=done" id="btnDone" class="btn btn-secondary"
-              target="_top">Done</a>
+          <div class="row">
+
+            <div class="col-6">
+              <button class="btn btn-primary mraa-button-primary mr-3" id="btnSave">Send to MRAA</button>
+              <a href="<?= ScriptApp.getService().getUrl(); ?>?v=done" id="btnDone" class="btn btn-secondary"
+            target="_top">Done</a></div>
+            <div class="col-6 text-right">
+              For Questions contact <a href="mailto:<?= getContactEmail(); ?>"> <?= getContactName(); ?> </a>
+            </div>
           </div>
         </div>
       </div>

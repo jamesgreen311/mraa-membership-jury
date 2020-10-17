@@ -16,7 +16,7 @@ function saveFile(f,d) {
 
     let newFile = DriveApp.createFile(blob).moveTo(uploadFolder).getId();
     d.push(newFile);
-    d.push(today.toString());
+    d.push(today); 
     
     let done = saveToSheet(d);
     Logger.log("Uploaded image id = %s",newFile)

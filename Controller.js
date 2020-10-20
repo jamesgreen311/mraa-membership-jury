@@ -19,7 +19,7 @@ function saveFile(f,d) {
     d.push(today); 
     
     let done = saveToSheet(d);
-    Logger.log("Uploaded image id = %s",newFile)
+    /* Logger.log("Uploaded image id = %s",newFile) */
     return done;
 }
 
@@ -28,6 +28,6 @@ function saveToSheet(data) {
     let ws = ss.getSheetByName(sheetName);
 
     ws.appendRow(data);
-    Logger.log(data);
+    /* Logger.log(data); */
     return true;
 }

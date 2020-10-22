@@ -79,8 +79,9 @@
             <ul>
               <li>Limit JPG file size to under 3MB each, 72dpi</li>
               <li>Keep quality as high as possible to stay under the file
-              size limit</li>
-              <li>Please be patient while image uploads. <mark>The larger the file size the longer it may take to upload.</mark> It may take several seconds.</li>
+                size limit</li>
+              <li>Please be patient while image uploads. <mark>The larger the file size the longer it may take to
+                  upload.</mark> It may take several seconds.</li>
             </ul>
             <div class="form-group mb-3">
               <input accept="image/jpeg, image/png" type="file" id="imageFile" class="form-control-file" required
@@ -116,9 +117,12 @@
         </div>
         <div class="col-6">
           <!-- Thumbnail -->
-          <h2 class="badge badge-secondary">Thumbnail</h2>
-          <div class="mraa-thumbnail-container" id="thumbnail-container" style="display: none;">
-            <img class="mraa-thumbnail" id="thumbnail" />
+          <div id="thumbnail-outer-box" class="mraa-highlight p-3">
+            <h2 class="badge badge-secondary">Thumbnail</h2>
+            <div id="thumbnail-message" class="text-muted small m-3">Once you have chosen an image to upload, it will appear here for you to preview before sending to MRAA.</div>
+            <div class="mraa-thumbnail-container" id="thumbnail-container" style="display: none;">
+              <img class="mraa-thumbnail" id="thumbnail" />
+            </div>
           </div>
         </div>
       </div>
@@ -130,8 +134,9 @@
 
             <div class="col-6">
               <button class="btn btn-primary mraa-button-primary mr-3" id="btnSave">Send to MRAA</button>
-              <a href="<?= ScriptApp.getService().getUrl(); ?>?v=done" id="btnDone" class="btn btn-secondary"
-            target="_top">Done</a></div>
+              <a href="<?= ScriptApp.getService().getUrl(); ?>?v=done" id="btnDone" class="mraa-link"
+                target="_top">When Finished Go Here</a>
+            </div>
             <div class="col-6 text-right">
               For Questions contact <a href="mailto:<?= getContactEmail(); ?>"> <?= getContactName(); ?> </a>
             </div>
